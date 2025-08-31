@@ -49,6 +49,16 @@ const Index = () => {
       title: "AWS Solutions Architect Associate",
       status: 'in-progress' as const,
       url: "https://drive.google.com/file/d/1daHHRFczASEVe-VVavZj9bdyzG_nPxCF/view?usp=drive_link"
+    },
+    {
+      title: "Oracle Certified Foundation Associate",
+      status: 'in-progress' as const,
+      url: "https://drive.google.com/file/d/1daHHRFczASEVe-VVavZj9bdyzG_nPxCF/view?usp=drive_link"
+    },
+    {
+      title: "Google Prompting Essentials",
+      status: 'in-progress' as const,
+      url: "https://drive.google.com/file/d/1BZNDtn6rlBnN9GZqaoIwJrQnocFQVvNA/view?usp=sharing"
     }
   ];
 
@@ -87,7 +97,7 @@ const Index = () => {
               Syed Danish Syed Ishaque
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-mono px-4">
-              DevOps Engineer | Cloud Architect | CI/CD Specialist
+              DevOps & Cloud Enthusiast | Learning | Building | Automating
             </p>
           </motion.div>
 
@@ -166,7 +176,7 @@ const Index = () => {
               stageNumber={3}
               delay={0.6}
             >
-              <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
+              <div className="grid md:grid-cols-2 gap-6 max-w-6xl">
                 {certificates.map((cert, index) => (
                   <CertificateCard
                     key={cert.title}
@@ -177,22 +187,12 @@ const Index = () => {
               </div>
             </PipelineStage>
 
-            {/* Skills Stage */}
-            <PipelineStage 
-              title="Skills" 
-              status="success" 
-              stageNumber={4}
-              delay={0.8}
-            >
-              <SkillsGrid />
-            </PipelineStage>
-
             {/* Tech Stack Stage */}
             <PipelineStage 
               title="Tech Stack" 
               status="success" 
-              stageNumber={5}
-              delay={0.9}
+              stageNumber={4}
+              delay={0.8}
             >
               <TechStackGrid />
             </PipelineStage>
@@ -201,8 +201,8 @@ const Index = () => {
             <PipelineStage 
               title="Experience" 
               status="success" 
-              stageNumber={6}
-              delay={1.1}
+              stageNumber={5}
+              delay={1.0}
             >
               <div className="space-y-6">
                 {experiences.map((exp, index) => (
@@ -219,8 +219,8 @@ const Index = () => {
             <PipelineStage 
               title="Deploy to Career" 
               status="success" 
-              stageNumber={7}
-              delay={1.3}
+              stageNumber={6}
+              delay={1.2}
             >
               <ContactTerminal />
             </PipelineStage>
@@ -230,7 +230,7 @@ const Index = () => {
               className="text-center py-8 px-4"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 1.5 }}
+              transition={{ duration: 0.6, delay: 1.4 }}
               viewport={{ once: true }}
             >
               <p className="text-muted-foreground font-mono text-sm md:text-base">

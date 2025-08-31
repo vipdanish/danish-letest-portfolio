@@ -68,6 +68,10 @@ const techStackIcons = [
   {
     name: 'Nginx',
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg'
+  },
+  {
+    name: 'Maven',
+    src: 'https://maven.apache.org/images/maven-logo-black-on-white.png'
   }
 ];
 
@@ -105,7 +109,8 @@ const TechStackGrid = () => {
                 src={tech.src}
                 alt={tech.name}
                 className={`w-full h-full object-contain transition-all duration-300 group-hover:drop-shadow-glow ${
-                  tech.name === 'AWS' ? 'w-16 h-12 md:w-20 md:h-14' : ''
+                  tech.name === 'AWS' ? 'w-16 h-12 md:w-20 md:h-14' : 
+                  tech.name === 'Maven' ? 'w-16 h-8 md:w-20 md:h-10' : ''
                 }`}
                 loading="lazy"
               />
