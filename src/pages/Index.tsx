@@ -5,6 +5,7 @@ import PipelineStage from '@/components/PipelineStage';
 import ProjectCard from '@/components/ProjectCard';
 import CertificateCard from '@/components/CertificateCard';
 import SkillsGrid from '@/components/SkillsGrid';
+import TechStackGrid from '@/components/TechStackGrid';
 import ExperienceCard from '@/components/ExperienceCard';
 import ContactTerminal from '@/components/ContactTerminal';
 
@@ -41,7 +42,7 @@ const Index = () => {
   const certificates = [
     {
       title: "AWS Certified Cloud Practitioner",
-      status: 'completed' as const,
+      status: 'in-progress' as const,
       url: "https://drive.google.com/file/d/1BZNDtn6rlBnN9GZqaoIwJrQnocFQVvNA/view?usp=sharing"
     },
     {
@@ -76,16 +77,16 @@ const Index = () => {
       
       {/* Landing Section */}
       <section className="min-h-screen flex items-center justify-center px-4 py-12">
-        <div className="text-center space-y-8">
+        <div className="text-center space-y-8 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4 px-2">
               Syed Danish Syed Ishaque
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground font-mono">
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-mono px-4">
               DevOps Engineer | Cloud Architect | CI/CD Specialist
             </p>
           </motion.div>
@@ -186,12 +187,22 @@ const Index = () => {
               <SkillsGrid />
             </PipelineStage>
 
+            {/* Tech Stack Stage */}
+            <PipelineStage 
+              title="Tech Stack" 
+              status="success" 
+              stageNumber={5}
+              delay={0.9}
+            >
+              <TechStackGrid />
+            </PipelineStage>
+
             {/* Experience Stage */}
             <PipelineStage 
               title="Experience" 
               status="success" 
-              stageNumber={5}
-              delay={1.0}
+              stageNumber={6}
+              delay={1.1}
             >
               <div className="space-y-6">
                 {experiences.map((exp, index) => (
@@ -208,21 +219,21 @@ const Index = () => {
             <PipelineStage 
               title="Deploy to Career" 
               status="success" 
-              stageNumber={6}
-              delay={1.2}
+              stageNumber={7}
+              delay={1.3}
             >
               <ContactTerminal />
             </PipelineStage>
 
             {/* Footer */}
             <motion.footer
-              className="text-center py-8"
+              className="text-center py-8 px-4"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 1.4 }}
+              transition={{ duration: 0.6, delay: 1.5 }}
               viewport={{ once: true }}
             >
-              <p className="text-muted-foreground font-mono">
+              <p className="text-muted-foreground font-mono text-sm md:text-base">
                 Designed by <span className="text-primary">ER Danish</span>
               </p>
             </motion.footer>

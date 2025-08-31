@@ -82,3 +82,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom animation classes */
+.animate-cursor-blink {
+  animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Enhanced glow effect for tech icons */
+.drop-shadow-glow {
+  filter: drop-shadow(0 0 8px hsl(var(--primary) / 0.5));
+}

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import ResumeButton from './ResumeButton';
 
 const ContactTerminal = () => {
   const [currentCommand, setCurrentCommand] = useState(0);
@@ -55,7 +56,7 @@ const ContactTerminal = () => {
         </div>
 
         {/* Terminal Content */}
-        <div className="p-6 font-mono text-sm space-y-3 min-h-[200px]">
+        <div className="p-4 md:p-6 font-mono text-sm space-y-3 min-h-[200px]">
           {commands.slice(0, currentCommand).map((command, index) => (
             <motion.div 
               key={index}
@@ -65,9 +66,9 @@ const ContactTerminal = () => {
             >
               <div className="flex items-center mb-1">
                 <span className="text-primary mr-2">$</span>
-                <span className="text-foreground">{command}</span>
+                <span className="text-foreground text-xs md:text-sm break-all">{command}</span>
               </div>
-              <div className="text-pipeline-success ml-4">
+              <div className="text-pipeline-success ml-4 text-xs md:text-sm">
                 {outputs[index]}
               </div>
             </motion.div>
@@ -76,7 +77,7 @@ const ContactTerminal = () => {
           {currentCommand < commands.length && (
             <div className="flex items-center">
               <span className="text-primary mr-2">$</span>
-              <span className="text-foreground">
+              <span className="text-foreground text-xs md:text-sm">
                 {isTyping ? (
                   <>
                     {commands[currentCommand]}
@@ -87,6 +88,17 @@ const ContactTerminal = () => {
                 )}
               </span>
             </div>
+          )}
+          
+          {currentCommand >= commands.length && (
+            <motion.div 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="flex justify-center pt-4"
+            >
+              <ResumeButton />
+            </motion.div>
           )}
         </div>
       </div>
