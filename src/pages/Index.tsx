@@ -64,19 +64,10 @@ const Index = () => {
 
   const experiences = [
     {
-      title: "Full Stack Developer Intern",
-      company: "Codveda Technology",
-      duration: "Mar 2025 – Apr 2025"
-    },
-    {
-      title: "Python Developer Intern",
-      company: "CCA Techno Pvt Ltd",
-      duration: "Apr 2023"
-    },
-    {
-      title: "Frontend Developer Intern",
-      company: "CCA Techno Pvt Ltd",
-      duration: "Dec 2022"
+      title: "DevOps Engineer Intern",
+      company: "TechnoHacks Solutions Pvt. Ltd. (Remote)",
+      duration: "Feb 2025 – Aug 2025",
+      description: "Worked on cloud infrastructure, CI/CD pipelines, containerization, and automation tools. Set up and managed deployment workflows, version control, and monitoring systems. Improved development efficiency by streamlining processes with DevOps best practices. Gained structured mentorship and hands-on training in modern DevOps tools."
     }
   ];
 
@@ -125,27 +116,43 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             className="container mx-auto px-4 py-12 space-y-16"
           >
-            {/* Education Stage */}
+            {/* About Me Stage */}
             <PipelineStage 
-              title="Education" 
+              title="About Me" 
               status="success" 
               stageNumber={1}
               delay={0.2}
             >
+              <div className="bg-card border border-card-border rounded-lg p-8 shadow-card max-w-4xl mx-auto">
+                <p className="text-muted-foreground leading-relaxed text-lg">
+                  I am a <span className="text-primary font-semibold">fresher</span> who chose the challenging path of <span className="text-primary font-semibold">DevOps</span> out of passion. Over the past <span className="text-primary font-semibold">1.5 years</span>, I've built strong skills in <span className="text-primary font-semibold">Cloud, Linux, IaC, CI/CD, and automation</span>. I completed a <span className="text-primary font-semibold">6-month DevOps internship</span> and delivered <span className="text-primary font-semibold">4+ hands-on projects</span> that reflect real-world scenarios. My decision to pursue this field early in my career shows my <span className="text-primary font-semibold">enthusiasm, persistence, and long-term commitment</span> to becoming a top DevOps professional.
+                </p>
+              </div>
+            </PipelineStage>
+
+            {/* Education Stage */}
+            <PipelineStage 
+              title="Education" 
+              status="success" 
+              stageNumber={2}
+              delay={0.4}
+            >
               <div className="space-y-6">
                 <div className="bg-card border border-card-border rounded-lg p-6 shadow-card">
-                  <h3 className="text-xl font-bold text-foreground mb-2">B.Tech Computer Science & Engineering</h3>
-                  <p className="text-primary font-semibold">Dr. Babasaheb Ambedkar Technological University (DBATU)</p>
-                  <p className="text-muted-foreground">CGPA: 7.43/10 | 2021–2025</p>
+                  <h3 className="text-xl font-bold text-foreground mb-2">B.Tech in Computer Science Engineering</h3>
+                  <p className="text-primary font-semibold">Dr. Babasaheb Ambedkar Technological University</p>
+                  <p className="text-muted-foreground">CGPA: 6.73/10 | Dec 2021 – June 2025</p>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-card border border-card-border rounded-lg p-6 shadow-card">
-                    <h4 className="font-bold text-foreground mb-1">Higher Secondary Certificate (HSC)</h4>
-                    <p className="text-muted-foreground">57% | 2020</p>
+                    <h4 className="font-bold text-foreground mb-1">12th (Higher Secondary Education)</h4>
+                    <p className="text-muted-foreground text-sm">Vilasrao Deshmukh Higher Secondary School</p>
+                    <p className="text-muted-foreground">57% | Feb 2020 (Maharashtra State Board)</p>
                   </div>
                   <div className="bg-card border border-card-border rounded-lg p-6 shadow-card">
-                    <h4 className="font-bold text-foreground mb-1">Secondary School Certificate (SSC)</h4>
-                    <p className="text-muted-foreground">84% | 2018</p>
+                    <h4 className="font-bold text-foreground mb-1">10th (Secondary Education)</h4>
+                    <p className="text-muted-foreground text-sm">Vilasrao Deshmukh Urdu High School</p>
+                    <p className="text-muted-foreground">84% | May 2018 (Maharashtra State Board)</p>
                   </div>
                 </div>
               </div>
@@ -155,8 +162,8 @@ const Index = () => {
             <PipelineStage 
               title="Projects" 
               status="success" 
-              stageNumber={2}
-              delay={0.4}
+              stageNumber={3}
+              delay={0.6}
             >
               <div className="grid md:grid-cols-2 gap-6">
                 {projects.map((project, index) => (
@@ -173,10 +180,10 @@ const Index = () => {
             <PipelineStage 
               title="Certifications" 
               status="success" 
-              stageNumber={3}
-              delay={0.6}
+              stageNumber={4}
+              delay={0.8}
             >
-              <div className="grid md:grid-cols-2 gap-6 max-w-6xl">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                 {certificates.map((cert, index) => (
                   <CertificateCard
                     key={cert.title}
@@ -191,8 +198,8 @@ const Index = () => {
             <PipelineStage 
               title="Tech Stack" 
               status="success" 
-              stageNumber={4}
-              delay={0.8}
+              stageNumber={5}
+              delay={1.0}
             >
               <TechStackGrid />
             </PipelineStage>
@@ -201,8 +208,8 @@ const Index = () => {
             <PipelineStage 
               title="Experience" 
               status="success" 
-              stageNumber={5}
-              delay={1.0}
+              stageNumber={6}
+              delay={1.2}
             >
               <div className="space-y-6">
                 {experiences.map((exp, index) => (
@@ -215,12 +222,63 @@ const Index = () => {
               </div>
             </PipelineStage>
 
+            {/* Availability Stage */}
+            <PipelineStage 
+              title="Open to Work Opportunities" 
+              status="success" 
+              stageNumber={7}
+              delay={1.4}
+            >
+              <div className="bg-card border border-card-border rounded-lg p-8 shadow-card max-w-4xl mx-auto">
+                <p className="text-muted-foreground mb-6 text-lg">
+                  I am currently available for internships and job opportunities in the following areas:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-foreground">Junior DevOps Engineer</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-foreground">DevOps Engineer</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-foreground">Cloud Engineer</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <span className="text-foreground">Site Reliability Engineer (SRE)</span>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mb-6">
+                  Looking for both <span className="text-primary font-semibold">remote and on-site opportunities</span>. Available for <span className="text-primary font-semibold">full-time roles immediately</span>.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a 
+                    href="tel:+919420862286" 
+                    className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+                  >
+                    📞 Contact Me
+                  </a>
+                  <a 
+                    href="https://linkedin.com/in/techdanish" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+                  >
+                    🔗 Connect on LinkedIn
+                  </a>
+                </div>
+              </div>
+            </PipelineStage>
+
             {/* Deploy to Career Stage */}
             <PipelineStage 
               title="Deploy to Career" 
               status="success" 
-              stageNumber={6}
-              delay={1.2}
+              stageNumber={8}
+              delay={1.6}
             >
               <ContactTerminal />
             </PipelineStage>
@@ -230,7 +288,7 @@ const Index = () => {
               className="text-center py-8 px-4"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 1.4 }}
+              transition={{ duration: 0.6, delay: 1.8 }}
               viewport={{ once: true }}
             >
               <p className="text-muted-foreground font-mono text-sm md:text-base">
