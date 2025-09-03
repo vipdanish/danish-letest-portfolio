@@ -1,21 +1,16 @@
-# My Portfolio Website 🌐
+# My Portfolio Website 🖥️
 
-This is my personal portfolio website, built to showcase my skills, projects, certifications, and achievements in **DevOps, Cloud, and Software Engineering**.  
+This is my personal portfolio website, built to showcase my skills, projects, certifications, and achievements in **DevOps, Cloud, and Software Engineering**.
 It serves as a central place where recruiters, collaborators, and peers can learn more about my work.
 
-🔗 **Live Website:** [Click Here](https://okdanish.xyz/)  
+⚡ **Unique Theme**:
 
----
+* Inspired by a **DevOps workflow**
+* Starts with a **terminal simulation** (`git clone`, `build`, `test`, `publish`)
+* Navigates through sections in a **Jenkins-style pipeline view** (Stage 1: About, Stage 2: Projects, etc.)
+<img width="940" height="442" alt="image" src="https://github.com/user-attachments/assets/8add1966-8a6c-4731-aa35-1d4cf5b3b52a" />
 
-## 🚀 Features
-- Modern, responsive design  
-- Dark theme with a professional layout  
-- Showcases projects with live demo links  
-- Integrated DevOps tools & technology stack section  
-- Certifications (AWS in progress)  
-- Contact and social links  
-
----
+🔗 *Live Website:* [Click Here](https://okdanish.xyz/)  
 
 ## 🛠️ Tech Stack
 - **Frontend:** React, TypeScript, Vite  
