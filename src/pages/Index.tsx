@@ -94,8 +94,11 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
+            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-light mb-2 animate-fade-in">
+              I am
+            </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4 px-2">
-              I am<br />Syed Danish Ishaque
+              Syed Danish Ishaque
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-mono px-4">
               DevOps & Cloud Enthusiast | Learning | Building | Automating
