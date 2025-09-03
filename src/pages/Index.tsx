@@ -41,24 +41,34 @@ const Index = () => {
 
   const certificates = [
     {
-      title: "AWS Certified Cloud Practitioner",
-      status: 'in-progress' as const,
-      url: "https://drive.google.com/file/d/1BZNDtn6rlBnN9GZqaoIwJrQnocFQVvNA/view?usp=sharing"
-    },
-    {
-      title: "AWS Solutions Architect Associate",
-      status: 'in-progress' as const,
-      url: "https://drive.google.com/file/d/1daHHRFczASEVe-VVavZj9bdyzG_nPxCF/view?usp=drive_link"
-    },
-    {
       title: "Oracle Certified Foundation Associate",
-      status: 'in-progress' as const,
+      status: 'completed' as const,
       url: "https://drive.google.com/file/d/1daHHRFczASEVe-VVavZj9bdyzG_nPxCF/view?usp=drive_link"
     },
     {
       title: "Google Prompting Essentials",
-      status: 'in-progress' as const,
+      status: 'completed' as const,
       url: "https://drive.google.com/file/d/1BZNDtn6rlBnN9GZqaoIwJrQnocFQVvNA/view?usp=sharing"
+    },
+    {
+      title: "DevOps Culture and Mindset",
+      status: 'completed' as const,
+      url: "https://drive.google.com/file/d/1BZNDtn6rlBnN9GZqaoIwJrQnocFQVvNA/view?usp=sharing"
+    },
+    {
+      title: "AWS Certified Cloud Practitioner",
+      status: 'in-progress' as const,
+      url: ""
+    },
+    {
+      title: "AWS Solutions Architect Associate",
+      status: 'in-progress' as const,
+      url: ""
+    },
+    {
+      title: "RHCE (Red Hat Certified Engineer) Exam",
+      status: 'in-progress' as const,
+      url: ""
     }
   ];
 
