@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Button } from '@/components/ui/button';
 import Terminal from '@/components/Terminal';
 import PipelineStage from '@/components/PipelineStage';
 import ProjectCard from '@/components/ProjectCard';
@@ -268,20 +269,30 @@ const Index = () => {
                   Looking for both <span className="text-primary font-semibold">remote and on-site opportunities</span>. Available for <span className="text-primary font-semibold">full-time roles immediately</span>.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a 
-                    href="tel:+919420862286" 
-                    className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+                  <Button 
+                    variant="outline" 
+                    size="sm"
+                    className="rounded-lg"
+                    asChild
                   >
-                    📞 Contact Me
-                  </a>
-                  <a 
-                    href="https://linkedin.com/in/techdanish" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center px-6 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:bg-accent/90 transition-colors"
+                    <a href="tel:+919420862286">
+                      📞 Contact Me
+                    </a>
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    size="sm"
+                    className="rounded-lg"
+                    asChild
                   >
-                    🔗 Connect on LinkedIn
-                  </a>
+                    <a 
+                      href="https://linkedin.com/in/techdanish" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      🔗 Connect on LinkedIn
+                    </a>
+                  </Button>
                 </div>
               </div>
             </PipelineStage>

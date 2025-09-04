@@ -43,7 +43,9 @@ const ResumeButton = () => {
     <div className="relative">
       <Button
         onClick={handleResumeClick}
-        className="bg-accent hover:bg-accent/80 text-accent-foreground font-mono"
+        variant="outline"
+        size="sm"
+        className="rounded-lg"
         disabled={showAnimation}
       >
         <FileText className="w-4 h-4 mr-2" />
