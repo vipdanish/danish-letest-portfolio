@@ -69,7 +69,7 @@ const ExperienceCard = ({ title, company, duration, description, delay = 0 }: Ex
               asChild
             >
               <a 
-                href="https://drive.google.com/file/d/1hJuY_pwxLhFWI8kzr_XLtj3MZ1l3_ko3/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1hGrTPr_KVN1oXFCE-oj772XgbZe13Pt9/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >

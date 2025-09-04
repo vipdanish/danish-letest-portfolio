@@ -56,8 +56,9 @@ const CertificateCard = ({ title, status, url, delay = 0 }: CertificateCardProps
 
       {shouldShowButton && (
         <Button 
-          variant="default" 
-          className="w-full bg-primary hover:bg-primary/80 text-primary-foreground"
+          variant="outline" 
+          size="sm"
+          className="rounded-lg"
           asChild
         >
           <a href={url} target="_blank" rel="noopener noreferrer">
