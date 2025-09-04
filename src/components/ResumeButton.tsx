@@ -36,7 +36,7 @@ const ResumeButton = () => {
     }, 800);
 
     // Open resume link
-    window.open('https://drive.google.com/file/d/1m7kWQogh_DlzL0eelzGGn3jqtwpXdS8B/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1T-XGG6dYkKT68VdW_naN-r8eq7sTmmLI/view?usp=sharing', '_blank');
   };
 
   return (
