@@ -42,14 +42,14 @@ const ProjectCard = ({ title, description, techStack, liveUrl, githubUrl, delay 
       {/* Action Buttons */}
       <div className="flex space-x-3">
         <Button 
-          variant="default" 
+          variant="outline" 
           size="sm" 
-          className="bg-primary hover:bg-primary/80 text-primary-foreground"
+          className="rounded-lg"
           asChild
         >
           <a href={liveUrl || "#"} target="_blank" rel="noopener noreferrer">
             <ExternalLink className="w-4 h-4 mr-2" />
-            Live Demo
+            View Repository
           </a>
         </Button>
         
@@ -57,7 +57,7 @@ const ProjectCard = ({ title, description, techStack, liveUrl, githubUrl, delay 
           <Button 
             variant="outline" 
             size="sm"
-            className="border-card-border hover:bg-muted"
+            className="rounded-lg"
             asChild
           >
             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
