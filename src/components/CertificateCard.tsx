@@ -10,6 +10,15 @@ interface CertificateCardProps {
 }
 
 const CertificateCard = ({ title, status, url, delay = 0 }: CertificateCardProps) => {
+  // Certificates that should not show the "View Certificate" button
+  const hiddenCertificates = [
+    "AWS Certified Cloud Practitioner",
+    "AWS Solutions Architect Associate", 
+    "RHCE (Red Hat Certified Engineer) Exam"
+  ];
+  
+  const shouldShowButton = !hiddenCertificates.includes(title) && url;
+  
   return (
     <motion.div
       className="bg-card border border-card-border rounded-lg p-6 shadow-card hover:shadow-glow transition-all duration-300"
@@ -45,16 +54,18 @@ const CertificateCard = ({ title, status, url, delay = 0 }: CertificateCardProps
 
       <h3 className="text-lg font-bold text-foreground mb-4">{title}</h3>
 
-      <Button 
-        variant="default" 
-        className="w-full bg-primary hover:bg-primary/80 text-primary-foreground"
-        asChild
-      >
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          <ExternalLink className="w-4 h-4 mr-2" />
-          View Certificate
-        </a>
-      </Button>
+      {shouldShowButton && (
+        <Button 
+          variant="default" 
+          className="w-full bg-primary hover:bg-primary/80 text-primary-foreground"
+          asChild
+        >
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            <ExternalLink className="w-4 h-4 mr-2" />
+            View Certificate
+          </a>
+        </Button>
+      )}
     </motion.div>
   );
 };

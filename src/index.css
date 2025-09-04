@@ -63,7 +63,7 @@
 
     /* Typography */
     --font-mono: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
-    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-sans: 'KoHo', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
