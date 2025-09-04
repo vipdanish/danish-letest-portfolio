@@ -97,7 +97,7 @@ const Index = () => {
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-light mb-2 animate-fade-in">
               My Self ...
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4 px-2">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4 px-2 leading-tight py-2">
               Syed Danish Ishaque
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-mono px-4">
