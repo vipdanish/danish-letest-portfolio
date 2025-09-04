@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Briefcase, Calendar } from 'lucide-react';
+import { Briefcase, Calendar, ExternalLink } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 interface ExperienceCardProps {
   title: string;
@@ -34,8 +35,49 @@ const ExperienceCard = ({ title, company, duration, description, delay = 0 }: Ex
           </div>
           
           {description && (
-            <p className="text-muted-foreground leading-relaxed">{description}</p>
+            <p className="text-muted-foreground leading-relaxed mb-4">{description}</p>
           )}
+          
+          {/* Mobile message */}
+          <div className="block md:hidden mb-4">
+            <p className="text-sm text-muted-foreground italic">
+              📱 View from laptop for best experience
+            </p>
+          </div>
+          
+          {/* Buttons for documents */}
+          <div className="hidden md:flex gap-3 mt-4">
+            <Button 
+              variant="outline" 
+              size="sm"
+              className="rounded-lg"
+              asChild
+            >
+              <a 
+                href="https://drive.google.com/file/d/1hJuY_pwxLhFWI8kzr_XLtj3MZ1l3_ko3/view?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Offer Letter
+              </a>
+            </Button>
+            <Button 
+              variant="outline" 
+              size="sm"
+              className="rounded-lg"
+              asChild
+            >
+              <a 
+                href="https://drive.google.com/file/d/1hJuY_pwxLhFWI8kzr_XLtj3MZ1l3_ko3/view?usp=sharing" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Completion Certificate
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </motion.div>

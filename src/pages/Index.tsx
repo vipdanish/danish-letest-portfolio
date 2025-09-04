@@ -217,9 +217,9 @@ const Index = () => {
               <TechStackGrid />
             </PipelineStage>
 
-            {/* Experience Stage */}
+            {/* Internship Stage */}
             <PipelineStage 
-              title="Experience" 
+              title="Internship" 
               status="success" 
               stageNumber={6}
               delay={1.2}
