@@ -9,7 +9,6 @@ import CertificateCard from '@/components/CertificateCard';
 import SkillsGrid from '@/components/SkillsGrid';
 import TechStackGrid from '@/components/TechStackGrid';
 import ExperienceCard from '@/components/ExperienceCard';
-import SocialLinks from '@/components/SocialLinks';
 import ContactTerminal from '@/components/ContactTerminal';
 
 const Index = () => {
@@ -286,6 +285,20 @@ const Index = () => {
                     className="rounded-lg"
                     asChild
                   >
+                    <a 
+                      href="https://drive.google.com/file/d/1Uk9_TY4T7UpFaLjXgZB-lIgHUbE8z-Tk/view?usp=sharing" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      📄 Download Resume
+                    </a>
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    size="sm"
+                    className="rounded-lg"
+                    asChild
+                  >
                     <a href="tel:+919420862286">
                       📞 Contact Me
                     </a>
@@ -377,32 +390,12 @@ const Index = () => {
               </div>
             </PipelineStage>
 
-            {/* Social Links Stage */}
-            <PipelineStage 
-              title="Connect with Me" 
-              status="success" 
-              stageNumber={8}
-              delay={1.6}
-            >
-              <SocialLinks />
-            </PipelineStage>
-
-            {/* Deploy to Career Stage */}
-            <PipelineStage 
-              title="Deploy to Career" 
-              status="success" 
-              stageNumber={9}
-              delay={1.8}
-            >
-              <ContactTerminal />
-            </PipelineStage>
-
             {/* Footer */}
             <motion.footer
               className="text-center py-8 px-4"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 2.0 }}
+              transition={{ duration: 0.6, delay: 1.6 }}
               viewport={{ once: true }}
             >
               <p className="text-muted-foreground font-mono text-sm md:text-base">
