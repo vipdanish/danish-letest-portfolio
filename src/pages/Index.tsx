@@ -75,10 +75,19 @@ const Index = () => {
 
   const experiences = [
     {
+      title: "DevOps Intern",
+      company: "Elevate Labs (Remote)",
+      duration: "Sept 22 – Ongoing",
+      description: "Currently undertaking an internship to gain hands-on experience in CI/CD pipelines, Docker containerization, Kubernetes orchestration, cloud deployments (AWS/Azure), Infrastructure as Code (Terraform/Ansible), and monitoring with Prometheus/Grafana. Aiming to build practical skills in automating workflows, managing cloud infrastructure, and implementing best practices in DevOps.",
+      offerLetterUrl: "https://drive.google.com/file/d/1WA4nkC0e8iT9-Z8qYJL1vA9zjZWwFOFT/view?usp=drive_link"
+    },
+    {
       title: "DevOps Engineer Intern",
       company: "TechnoHacks Solutions Pvt. Ltd. (Remote)",
       duration: "Feb 2025 – Aug 2025",
-      description: "Worked on cloud infrastructure, CI/CD pipelines, containerization, and automation tools. Set up and managed deployment workflows, version control, and monitoring systems. Improved development efficiency by streamlining processes with DevOps best practices. Gained structured mentorship and hands-on training in modern DevOps tools."
+      description: "Worked on cloud infrastructure, CI/CD pipelines, containerization, and automation tools. Set up and managed deployment workflows, version control, and monitoring systems. Improved development efficiency by streamlining processes with DevOps best practices. Gained structured mentorship and hands-on training in modern DevOps tools.",
+      offerLetterUrl: "https://drive.google.com/file/d/1hJuY_pwxLhFWI8kzr_XLtj3MZ1l3_ko3/view?usp=sharing",
+      completionCertificateUrl: "https://drive.google.com/file/d/1hGrTPr_KVN1oXFCE-oj772XgbZe13Pt9/view?usp=sharing"
     }
   ];
 

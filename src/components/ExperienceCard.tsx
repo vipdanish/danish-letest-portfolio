@@ -8,9 +8,11 @@ interface ExperienceCardProps {
   duration: string;
   description?: string;
   delay?: number;
+  offerLetterUrl?: string;
+  completionCertificateUrl?: string;
 }
 
-const ExperienceCard = ({ title, company, duration, description, delay = 0 }: ExperienceCardProps) => {
+const ExperienceCard = ({ title, company, duration, description, delay = 0, offerLetterUrl, completionCertificateUrl }: ExperienceCardProps) => {
   return (
     <motion.div
       className="bg-card border border-card-border rounded-lg p-6 shadow-card hover:shadow-glow transition-all duration-300"
@@ -47,36 +49,40 @@ const ExperienceCard = ({ title, company, duration, description, delay = 0 }: Ex
           
           {/* Buttons for documents */}
           <div className="hidden md:flex gap-3 mt-4">
-            <Button 
-              variant="outline" 
-              size="sm"
-              className="rounded-lg"
-              asChild
-            >
-              <a 
-                href="https://drive.google.com/file/d/1hJuY_pwxLhFWI8kzr_XLtj3MZ1l3_ko3/view?usp=sharing" 
-                target="_blank" 
-                rel="noopener noreferrer"
+            {offerLetterUrl && (
+              <Button 
+                variant="outline" 
+                size="sm"
+                className="rounded-lg"
+                asChild
               >
-                <ExternalLink className="w-4 h-4 mr-2" />
-                Offer Letter
-              </a>
-            </Button>
-            <Button 
-              variant="outline" 
-              size="sm"
-              className="rounded-lg"
-              asChild
-            >
-              <a 
-                href="https://drive.google.com/file/d/1hGrTPr_KVN1oXFCE-oj772XgbZe13Pt9/view?usp=sharing" 
-                target="_blank" 
-                rel="noopener noreferrer"
+                <a 
+                  href={offerLetterUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Offer Letter
+                </a>
+              </Button>
+            )}
+            {completionCertificateUrl && (
+              <Button 
+                variant="outline" 
+                size="sm"
+                className="rounded-lg"
+                asChild
               >
-                <ExternalLink className="w-4 h-4 mr-2" />
-                Completion Certificate
-              </a>
-            </Button>
+                <a 
+                  href={completionCertificateUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Completion Certificate
+                </a>
+              </Button>
+            )}
           </div>
         </div>
       </div>
