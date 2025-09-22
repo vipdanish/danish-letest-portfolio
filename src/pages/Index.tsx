@@ -286,7 +286,7 @@ const Index = () => {
                     asChild
                   >
                     <a 
-                      href="https://https://drive.google.com/file/d/19T8-LjgAF88aQZFtdSgiIo4kadNUpsyi/view?usp=sharing" 
+                      href="https://drive.google.com/uc?export=download&id=19T8-LjgAF88aQZFtdSgiIo4kadNUpsyi"
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
