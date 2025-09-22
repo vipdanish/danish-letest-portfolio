@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Globe, Github, Instagram, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Terminal from '@/components/Terminal';
 import PipelineStage from '@/components/PipelineStage';
@@ -303,6 +304,75 @@ const Index = () => {
                       🔗 Connect on LinkedIn
                     </a>
                   </Button>
+                </div>
+                
+                {/* Social Links */}
+                <div className="mt-6 pt-6 border-t border-card-border">
+                  <p className="text-sm text-muted-foreground mb-4 text-center">
+                    Find me on social media:
+                  </p>
+                  <div className="flex items-center justify-center gap-4">
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="w-10 h-10 rounded-full p-0 hover:shadow-glow hover:scale-110 transition-all duration-300"
+                      asChild
+                    >
+                      <a 
+                        href="https://okdanish.xyz" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        title="Portfolio Website"
+                      >
+                        <Globe className="w-4 h-4" />
+                      </a>
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="w-10 h-10 rounded-full p-0 hover:shadow-glow hover:scale-110 transition-all duration-300"
+                      asChild
+                    >
+                      <a 
+                        href="https://github.com/vipdanish" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        title="GitHub"
+                      >
+                        <Github className="w-4 h-4" />
+                      </a>
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="w-10 h-10 rounded-full p-0 hover:shadow-glow hover:scale-110 transition-all duration-300"
+                      asChild
+                    >
+                      <a 
+                        href="https://www.instagram.com/vip_danish_/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        title="Instagram"
+                      >
+                        <Instagram className="w-4 h-4" />
+                      </a>
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="w-10 h-10 rounded-full p-0 hover:shadow-glow hover:scale-110 transition-all duration-300"
+                      asChild
+                    >
+                      <a 
+                        href="https://twitter.com/tech__danish" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        title="X (Twitter)"
+                      >
+                        <Twitter className="w-4 h-4" />
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </PipelineStage>
