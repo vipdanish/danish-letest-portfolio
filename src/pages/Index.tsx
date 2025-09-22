@@ -8,6 +8,7 @@ import CertificateCard from '@/components/CertificateCard';
 import SkillsGrid from '@/components/SkillsGrid';
 import TechStackGrid from '@/components/TechStackGrid';
 import ExperienceCard from '@/components/ExperienceCard';
+import SocialLinks from '@/components/SocialLinks';
 import ContactTerminal from '@/components/ContactTerminal';
 
 const Index = () => {
@@ -306,12 +307,22 @@ const Index = () => {
               </div>
             </PipelineStage>
 
+            {/* Social Links Stage */}
+            <PipelineStage 
+              title="Connect with Me" 
+              status="success" 
+              stageNumber={8}
+              delay={1.6}
+            >
+              <SocialLinks />
+            </PipelineStage>
+
             {/* Deploy to Career Stage */}
             <PipelineStage 
               title="Deploy to Career" 
               status="success" 
-              stageNumber={8}
-              delay={1.6}
+              stageNumber={9}
+              delay={1.8}
             >
               <ContactTerminal />
             </PipelineStage>
@@ -321,7 +332,7 @@ const Index = () => {
               className="text-center py-8 px-4"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.6, delay: 1.8 }}
+              transition={{ duration: 0.6, delay: 2.0 }}
               viewport={{ once: true }}
             >
               <p className="text-muted-foreground font-mono text-sm md:text-base">
