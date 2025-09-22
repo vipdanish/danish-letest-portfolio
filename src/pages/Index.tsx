@@ -206,7 +206,7 @@ const Index = () => {
               stageNumber={4}
               delay={0.8}
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                 {certificates.map((cert, index) => (
                   <CertificateCard
                     key={cert.title}
