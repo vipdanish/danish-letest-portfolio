@@ -258,9 +258,15 @@ const Index = () => {
               title="Open to Work Opportunities" 
               status="success" 
               stageNumber={7}
-              delay={1.4}
+              delay={0}
             >
-              <div className="bg-card border border-card-border rounded-lg p-8 shadow-card max-w-4xl mx-auto">
+              <motion.div 
+                className="bg-card border border-card-border rounded-lg p-8 shadow-card max-w-4xl mx-auto"
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
+                viewport={{ once: true, margin: "-50px" }}
+              >
                 <p className="text-muted-foreground mb-6 text-lg">
                   I am currently available for internships and job opportunities in the following areas:
                 </p>
@@ -394,7 +400,7 @@ const Index = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </PipelineStage>
 
             {/* Footer */}
