@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Globe, Github, Instagram, Twitter } from 'lucide-react';
+import { Globe, Github, Instagram, Twitter, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Terminal from '@/components/Terminal';
 import PipelineStage from '@/components/PipelineStage';
@@ -13,6 +13,7 @@ import ContactTerminal from '@/components/ContactTerminal';
 
 const Index = () => {
   const [showPipeline, setShowPipeline] = useState(false);
+  const [heartClicked, setHeartClicked] = useState(false);
 
   const projects = [
     {
@@ -162,7 +163,7 @@ const Index = () => {
               delay={0.4}
             >
               <div className="space-y-6">
-                <div className="bg-card border border-card-border rounded-lg p-6 shadow-card">
+                <div className="bg-card border border-card-border rounded-lg p-6 shadow-card text-center">
                   <h3 className="text-xl font-bold text-foreground mb-2">B.Tech in Computer Science Engineering</h3>
                   <p className="text-primary font-semibold">Dr. Babasaheb Ambedkar Technological University</p>
                   <p className="text-muted-foreground">CGPA: 6.73/10 | Dec 2021 – June 2025</p>
@@ -398,8 +399,24 @@ const Index = () => {
               transition={{ duration: 0.6, delay: 1.6 }}
               viewport={{ once: true }}
             >
-              <p className="text-muted-foreground font-mono text-sm md:text-base">
-                Designed by <span className="text-primary">ER Danish</span>
+              <p className="text-muted-foreground font-mono text-sm md:text-base flex items-center justify-center gap-2">
+                Designed with 
+                <motion.button
+                  onClick={() => {
+                    setHeartClicked(true);
+                    setTimeout(() => setHeartClicked(false), 1000);
+                  }}
+                  animate={heartClicked ? {
+                    scale: [1, 1.5, 1.2, 1.5, 1],
+                    rotate: [0, 15, -15, 15, 0],
+                    color: ["hsl(var(--muted-foreground))", "hsl(var(--primary))", "hsl(var(--destructive))", "hsl(var(--primary))", "hsl(var(--muted-foreground))"]
+                  } : {}}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                  className="text-primary hover:text-destructive transition-colors duration-300 focus:outline-none"
+                >
+                  <Heart className="w-4 h-4 fill-current" />
+                </motion.button>
+                by <span className="text-primary">ER Danish</span>
               </p>
             </motion.footer>
           </motion.div>
