@@ -164,18 +164,24 @@ const Index = () => {
             >
               <div className="space-y-6">
                 <div className="bg-card border border-card-border rounded-lg p-6 shadow-card text-center">
-                  <h3 className="text-xl font-bold text-foreground mb-2">B.Tech in Computer Science Engineering</h3>
+                  <h3 className="text-xl font-bold text-foreground mb-2 flex items-center justify-center gap-2">
+                    🎓 B.Tech in Computer Science Engineering
+                  </h3>
                   <p className="text-primary font-semibold">Dr. Babasaheb Ambedkar Technological University</p>
                   <p className="text-muted-foreground">CGPA: 6.73/10 | Dec 2021 – June 2025</p>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-card border border-card-border rounded-lg p-6 shadow-card">
-                    <h4 className="font-bold text-foreground mb-1">12th (Higher Secondary Education)</h4>
+                    <h4 className="font-bold text-foreground mb-1 flex items-center gap-2">
+                      🔬 12th (Higher Secondary Education)
+                    </h4>
                     <p className="text-muted-foreground text-sm">Vilasrao Deshmukh Higher Secondary School</p>
                     <p className="text-muted-foreground">57% | Feb 2020 (Maharashtra State Board)</p>
                   </div>
                   <div className="bg-card border border-card-border rounded-lg p-6 shadow-card">
-                    <h4 className="font-bold text-foreground mb-1">10th (Secondary Education)</h4>
+                    <h4 className="font-bold text-foreground mb-1 flex items-center gap-2">
+                      🎒 10th (Secondary Education)
+                    </h4>
                     <p className="text-muted-foreground text-sm">Vilasrao Deshmukh Urdu High School</p>
                     <p className="text-muted-foreground">84% | May 2018 (Maharashtra State Board)</p>
                   </div>
